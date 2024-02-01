@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon (now delivering) Games!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<!--Top Navbar Code-->
+<body>
+    <nav class="AMZNGAMESNAV">
+        <div class="NavContainAMZN">
+            <div class="AMZNLogo"> <!--Container for Logo-->
+                <a href="index.html"> <img src="img/Amazon_Games_logo.svg.png" alt="games logo"  height="29px" width="60px"> </img> </a> 
+            </div>
+            <ul class="AMZNGAMESNAVLIST"> <!--Navbar Items-->
+                <li class="NavItem" id="Games">
+                    <a href="/" class="navbarlinks">
+                        GAMES
+                    </a>
+                <li class="NavItem" id="Products">
+                    <a href="/" class="navbarlinks">
+                        PRODUCTS
+                    </a>
+                <li class="NavItem" id="Careers">
+                    <a href="/" class="navbarlinks">
+                        CAREERS
+                    </a>
+                <li class="NavItem" id="Support">
+                    <a href="/" class="navbarlinks">
+                        SUPPORT
+                    </a>
+                <li class="NavItem">
+                    <a href="/" class="navbarlinks" id="PRIME">
+                        PRIME
+                    </a>
+                <li class="LogInBtn">
+                    <a href="LogIN.html" class="Btn"> <img src="img/user-profile-icon.svg" alt="Log In Icon" height="30px" width="30px"> </a>
+                </li>
+                </li>
+            </ul>
+         </div>
+    </nav>
+    <div class="img-slider"> <!--Image Slider CSS code-->
+        <div class="slide active">
+            <img src="img/Conduit Apex.jpg" alt="ConduitApexLegends">
+            <div class="info">
+                <div class="GameLogo">
+                    <img src="img/Game Logos/ApexLegends.png" alt="Apex Legends">
+                </div>
+                <p>Ignite your Season 19 with all new Prime Rewards in Apex Legends, including weapon and legend skins, emotes and Holosprays! </p>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="img/FortniteC5S1cover.png" alt="FNC5S1">
+            <div class="info">
+                <div class="GameLogo">
+                    <img src="img/Game Logos/Fortnite-Logo.wine.svg" alt="Fortnite Chapter 5 Season 1">
+                </div>
+                <p>With so much new in Fortnite, its underground where we head first. Gain in game perks with Prime.</p>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="img/Lost-Ark-card-system-guide.png" alt="Lost Ark">
+            <div class="info">
+                <div class="GameLogo">
+                    <img src="img/Game Logos/loST-ARK.png" alt="Lost Ark Logo">
+                </div>
+                <p>With the arrival of the New Year a new Lost Ark monthly update has arrived. The January Update includes the Inferno mode of Brelshaza, the new Lai Lai Adventure Island, and a slew of quality of life and balance updates, along with additional new content.</p>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="img/FallGuysart.png" alt="FallGuys">
+            <div class="info">
+                <div class="GameLogo">
+                    <img src="img/Game Logos/FallGuys_2020.svg" alt="FALL guys Logo">
+                </div>
+                <p>More chaos, more falling and more guys. Get exclusive cosmetics with Prime and run (dont fall) into your first Crown of many in Fall Guys.</p>
+            </div>
+        </div>
+        
+        <div class="navigationimgslider"> <!--Navigation for the image slider-->
+            <div class="navbtn"></div>
+            <div class="navbtn"></div>
+            <div class="navbtn"></div>
+            <div class="navbtn"></div>
+        </div>
+        <script type="text/javascript">
+            var slides = document.querySelectorAll(".slide");
+            var btns = document.querySelectorAll(".navbtn");
+            let currentSlide = 1;
+            //Java for image slider (manual)//
+            var ManualNav = function(manual){
+                slides.forEach((slide)=> {
+                    slide.classList.remove("active");
+                    btns.forEach((btn) => {
+                        btn.classList.remove("active");
+                    });
+                });
+                slides[manual].classList.add("active");
+                btns[manual].classList.add("active");
+            }
+            btns.forEach((btn, i) =>{
+                btn.addEventListener("click", () => {
+                    ManualNav(i);
+                    currentSlide = i;
+                });
+
+            });
+            // Javascript for autoplay navigation//
+            var repeat = function(activeClass){
+                let active = document.getElementsByClassName("active");
+                let i = 1;
+                var repeater = () => {
+                    setTimeout(function(){
+                        [...active].forEach((activeSlide) =>{
+                            activeSlide.classList.remove("active")
+                        });
+
+                        slides[i].classList.add("active")
+                        btns[i].classList.add("active")
+                        i++;
+                        if(slides.length == i){
+                            i = 0;
+                        }
+                        if (i >= slides.length){
+                            return;
+                        }
+                        repeater();
+                        
+                    }, 10000);
+                    }
+                    repeater();
+                }
+                repeat();
+        </script>
+    </div>
+    <div class="PrimeInfo"> <!--Start of Code for the prime info and CTA (call to action) button-->
+        <h1 id="TitlePrime"> Gaming at it's very best. </h1>
+        <p id="DescPrime"> Amazon Prime delivers to you an even greater experience for games. Prime offers in-game content for your favorite games like Apex Legends, Fortnite and Fall Guys, claiming great games like "Endling: Extinction is Forever" and "A Tiny Sticker Tale". and even supporting fellow gamers and streamers with a free Twitch Sub.
+            Subscribe today and get 3 months free.
+        </p>
+        <div class="PrimeSubBtn">
+            <a href="#" id="PrimeBtn"> <img src="img/prime.svg"> </img> </a>
+        </div>
+
+    </div>
+    <div class="WorkForUsCTA">
+        <div class="block"></div>
+        <div class="WorkForUsCTAImg">
+            <img src="img/CTAimg.png" alt="AmznGamesCTA">
+        </div>
+        <div class="TxtCTA">
+        <h1 id="Catch">Love games? Love working with people? You would love working with Amazon Games!</h1>
+        <p id="DescCTA"> We are always looking for creative, logical and passionate minds to join the team. Click the button below to find out more. </p>
+        </div>
+        <div class="FindOutMoreBtn">
+            <button class="shadow__btn"> Find Out More </button>
+        </div>
+    </div>
+</body>
+</html>

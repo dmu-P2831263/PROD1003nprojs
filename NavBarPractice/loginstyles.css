@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family:"Kanit", sans-serif ;
+    z-index: 3;
+}
+
+body{
+    background-image:
+    linear-gradient(to bottom, rgba(10, 10, 10, 0.84), rgba(36, 36, 36, 0.84)),
+    url('img/bgimg.png'); 
+    width: auto;
+    height: 1000px;
+    background-size: cover;
+    color: rgb(177, 177, 177);
+    z-index: 1;
+}
+
+.LogInHolder{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.LogInLogo{
+   z-index: 2;
+   position: absolute;
+   left: 2%;
+   top: 2%;
+   cursor: pointer;
+}
+
+.LogInLogo:hover{
+    transform: scale(1.02);
+    transition: 150ms ease-in-out;
+}
+
+.LogInLogo img{
+    width: 120px;
+    height: 58px;
+}
+
+.PromptHolder{
+    width: 500px;
+    height: 800px;
+    position: absolute;
+    top: 25%;
+    left: 30%
+}
+
+.input {
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    padding: 1em;
+    margin: 1% 0%;
+    background-color: #1A191C;
+    box-shadow: inset 2px 5px 10px rgba(0,0,0,0.3);
+    transition: 300ms ease-in-out;
+  }
+  
+  .input:focus {
+    background-color: white;
+    transform: scale(1.05);
+    box-shadow: 13px 13px 100px #969696,
+               -13px -13px 100px #ffffff;
+  }

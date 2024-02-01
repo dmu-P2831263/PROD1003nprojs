@@ -1,0 +1,1394 @@
+/* https://htmlpreview.github.io/ to preview */
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+@media screen and (max-width: 2560px) {
+    body{
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        background-color: #2E2E2E;
+        }
+        
+        .NavContainAMZN{
+            background-color: rgba(40, 40, 40, 0.9);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-height: 80px;
+            z-index: 100;
+            top: 0;
+            left: 0;
+            padding: 20px 0px;
+        }
+        
+        .NavItem{
+            height: auto;
+            list-style: none;
+        }
+        
+        .LogInBtn{
+            height: auto;
+            list-style: none;
+            filter: invert(89%);
+            padding-right: 20px;
+        }
+        
+        .Btn{
+            display: flex;
+            height: 0%;
+        }
+        
+        .navbarlinks{
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            text-decoration: none;
+            padding: 0 1rem;
+            margin: auto; 
+            height: 30px;
+            font-family: 'Kanit', sans-serif;
+        }
+        
+        .navbarlinks:hover{
+            color: #ff9a00;
+            transition: all ease-in-out 0.2s;
+        }
+        
+        #PRIME{
+            color: #fff;
+            font-weight: 600;   
+        }
+        
+        #PRIME:hover {
+            color: #e91efc;
+            transition: all ease-in-out 0.2s;
+        }
+        
+        .AMZNGAMESNAVLIST {
+            display: flex;
+        }
+        
+        .AMZNGAMESNAV {
+            min-height: 73px;
+            max-width: 1880px;
+            min-width: 500px;
+            margin: 0 0 0 0;
+            padding: 0 0 0 0;
+        }
+        
+        .AMZNLogo {
+            margin-left: 30px;
+            cursor: pointer;
+        }
+        
+        .navbar__menu{
+            display: flex;
+            align-items: center;
+            list-style: none;
+            text-align: center ;
+        }
+        
+        p{
+            font-family: "Kanit", sans-serif;
+        }
+        
+        .img-slider{
+            position: relative;
+            background-color: #2E2E2E;
+            height: 100%;
+            
+        
+        }
+        
+        .img-slider .slide{
+            z-index: 1;
+            position: absolute;
+            width: 74%;
+            clip-path: circle(0% at 0 50%);
+            overflow: hidden;
+        
+        }
+        
+        .img-slider .slide img{
+            z-index: 1;
+            width: 100%;
+            height: 100%;
+            border-radius: 0px;
+            
+        }
+        .img-slider .slide .info{
+            position: absolute;
+            bottom: 0;
+            padding: 15px 30px;
+        }
+        
+        .img-slider .slide .info .GameLogo{
+            width: 17%;
+            height: 17%;
+            padding-top: 1vh;
+        }
+        
+        
+        .img-slider .slide .info p{
+            color: #fff;
+            background: rgba(255,255, 255, 0.1);
+            font-size: 25px;
+            width: 40%;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        
+        .img-slider .navigationimgslider {
+            z-index: 2;
+            position: absolute;
+            display: flex; 
+            width: 128px;
+            height: 32px;
+            transform: translateX(-50%);
+            background-color: #2E2E2E;
+            margin: 0 0;
+            border-radius:7px 7px 0px 0px;
+        }
+        
+        .img-slider .navbtn {
+            background: rgba(255, 255, 255, 0.5);
+            width: 12px;
+            height: 12px;
+            margin: 10px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        
+        .img-slider .slide.active {
+            clip-path: circle(150.0% at 0 50%);
+            transition: 2s all ease-in-out;
+            transition-property: clip-path;
+            /* Ask Thom how to auto crop */
+            
+        }
+        
+        .img-slider .navbtn.active {
+            background: #ff9a00;
+        }
+        
+        .LogInBtn:hover{
+            filter:invert(100%)
+        
+        }
+        .PrimeInfo{
+            position: absolute;
+            top: 1165px;
+            height: 250px;
+            width: auto;
+            background-color: #e7e7e7;
+            padding: 2%;
+            background: linear-gradient(to left, rgba(231,231,231,0) -300%, rgba(231,231,231,1)), url(img/PrimeImgFolder/BannerPrimeImg.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        .BannerImg{
+            z-index: 0;
+        }
+        #TitlePrime{
+            z-index: 1;
+            font-family: "Kanit", sans-serif;
+            color: #a614b3; 
+        }
+        
+        #DescPrime{
+            z-index: 2;
+            font-size: 20px;
+            width: 40%;
+            height: 150px;
+            color: #a614b3;
+        }
+        .PrimeSubBtn{
+        width: 100%;
+        height: 100px;
+        }
+        /*Code for Button and Animation*/
+        #PrimeBtn{
+            left: 50%;
+            bottom: 130%;
+            text-decoration: none;
+            position: relative;
+            border: none;
+            cursor: pointer;
+            color: #fff;
+            display: flex;
+            width: 600px;
+            height: 135px;
+            text-align: center;
+            background: linear-gradient(315deg, #3f018a, #4f098e, #651fb3, #6c22cd);
+            background-size: 100%;
+            border-radius: 30px;
+            z-index: 1;
+        }
+        
+        #PrimeBtn:hover {
+            animation: ani 8s linear infinite;
+            border: none;
+        }
+        
+        @keyframes ani {
+            0% {
+              background-position: 0%;
+            }
+          
+            100% {
+              background-position: 400%;
+            }
+          }
+        
+        #PrimeBtn:before {
+            content: "";
+            position: absolute;
+            top: -5px;
+            left: -5px;
+            right: -5px;
+            bottom: -5px;
+            z-index: -1;
+            background: linear-gradient(315deg, #3f018a, #4f098e, #651fb3, #6c22cd);
+            background-size: 400%;
+            border-radius: 35px;
+            transition: 1s;
+          }
+        
+        #PrimeBtn:hover::before{
+            filter: blur(20px);
+          }
+        
+        #PrimeBtn:active {
+            background: linear-gradient(257deg, #3f018a, #4f098e, #651fb3, #6c22cd);
+          }
+          
+        
+        #PrimeBtn img{
+            position:absolute;
+            width: 165px;
+            height: 198px;
+            padding: 2%;
+            left: 196px;
+            top: -32%;
+            filter: invert(0.88);
+            }
+        
+        .WorkForUsCTA{
+            position: absolute;
+            width: 100%;
+            height: 1100px;
+            top: 1260px;
+        }
+        .block{
+            width: 40%;
+            height: 70%;
+            top: 30%;
+            position: absolute;
+            background: linear-gradient(150deg,#006ECE,#33a0ff);
+        }
+        
+        .TxtCTA{
+            position: absolute;
+            top: 34%;
+            width: 40%;
+        }
+        
+        #Catch{
+            font-family: "Kanit",sans-serif;
+            padding: 10% 10% 10% 10%;
+            color:#e7e7e7;
+        }
+        
+        #DescCTA{
+            padding: 10% 10%;
+            font-size: 20px;
+            color: #e7e7e7;
+        }
+        
+        .WorkForUsCTAImg{
+            position: absolute;
+            z-index: -1;
+            top: 30%;
+            left: 40%;
+            height: 100%;
+            overflow: hidden;
+        }
+        
+        .shadow__btn {
+            padding: 10px 20px;
+            border: none;
+            font-size: 17px;
+            color: #fff;
+            border-radius: 7px;
+            letter-spacing: 4px;
+            font-weight: 700;
+            text-transform: uppercase;
+            transition: 0.5s;
+            transition-property: box-shadow;
+            position: absolute;
+            top:87%;
+            left:4%;
+            }
+              
+        .shadow__btn {
+            background: rgb(255, 221, 0);
+            box-shadow: 0 0 25px rgb(255, 225, 0);
+            }
+              
+        .shadow__btn:hover {
+            box-shadow: 0 0 5px rgb(255, 221, 0),
+                        0 0 25px rgb(255, 221, 0),
+                        0 0 50px rgb(255, 221, 0),
+                        0 0 100px rgb(255, 221, 0);
+            }
+
+    
+}
+
+@media  screen and (max-width: 1920px) {
+    
+
+body{
+height: 100vh;
+justify-content: center;
+align-items: center;
+background-color: #2E2E2E;
+}
+
+.NavContainAMZN{
+    background-color: rgba(40, 40, 40, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-height: 80px;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    padding: 20px 0px;
+}
+
+.NavItem{
+    height: auto;
+    list-style: none;
+}
+
+.LogInBtn{
+    height: auto;
+    list-style: none;
+    filter: invert(89%);
+    padding-right: 20px;
+}
+
+.Btn{
+    display: flex;
+    height: 0%;
+}
+
+.navbarlinks{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-decoration: none;
+    padding: 0 1rem;
+    margin: auto; 
+    height: 30px;
+    font-family: 'Kanit', sans-serif;
+}
+
+.navbarlinks:hover{
+    color: #ff9a00;
+    transition: all ease-in-out 0.2s;
+}
+
+#PRIME{
+    color: #fff;
+    font-weight: 600;   
+}
+
+#PRIME:hover {
+    color: #e91efc;
+    transition: all ease-in-out 0.2s;
+}
+
+.AMZNGAMESNAVLIST {
+    display: flex;
+}
+
+.AMZNGAMESNAV {
+    min-height: 73px;
+    max-width: 4000px;
+    min-width: 500px;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+
+.AMZNLogo {
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+.navbar__menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: center ;
+}
+
+p{
+    font-family: "Kanit", sans-serif;
+}
+
+.img-slider{
+    position: relative;
+    background-color: #2E2E2E;
+    height: 100%;
+    
+
+}
+
+.img-slider .slide{
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    clip-path: circle(0% at 0 50%);
+    overflow: hidden;
+
+}
+
+.img-slider .slide img{
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    border-radius: 0px;
+    
+}
+.img-slider .slide .info{
+    position: absolute;
+    bottom: 0;
+    padding: 15px 30px;
+}
+
+.img-slider .slide .info .GameLogo{
+    width: 25%;
+    height: 25%;
+    padding-top: 1vh;
+}
+
+
+.img-slider .slide .info p{
+    color: #fff;
+    background: rgba(255,255, 255, 0.1);
+    font-size: 16px;
+    width: 60%;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.img-slider .navigationimgslider {
+    z-index: 2;
+    position: absolute;
+    display: flex; 
+    bottom: -24vh;
+    right: 9vw;
+    transform: translateX(-50%);
+    background-color: #2E2E2E;
+    margin: 0 0;
+    border-radius:7px 7px 0px 0px;
+}
+
+.img-slider .navbtn {
+    background: rgba(255, 255, 255, 0.5);
+    width: 12px;
+    height: 12px;
+    margin: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.img-slider .slide.active {
+    clip-path: circle(150.0% at 0 50%);
+    transition: 2s all ease-in-out;
+    transition-property: clip-path;
+    /* Ask Thom how to auto crop */
+    
+}
+
+.img-slider .navbtn.active {
+    background: #ff9a00;
+}
+
+.LogInBtn:hover{
+    filter:invert(100%)
+
+}
+.PrimeInfo{
+    position: absolute;
+    top: 950px;
+    height: 250px;
+    width: 1920px;
+    background-color: #e7e7e7;
+    padding: 2%;
+    background: linear-gradient(to left, rgba(231,231,231,0) -300%, rgba(231,231,231,1)), url(img/PrimeImgFolder/BannerPrimeImg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.BannerImg{
+    z-index: 0;
+}
+#TitlePrime{
+    z-index: 1;
+    font-family: "Kanit", sans-serif;
+    color: #a614b3; 
+}
+
+#DescPrime{
+    z-index: 2;
+    font-size: 20px;
+    width: 40%;
+    height: 150px;
+    color: #a614b3;
+}
+.PrimeSubBtn{
+width: 100%;
+height: 100px;
+}
+/*Code for Button and Animation*/
+#PrimeBtn{
+    left: 50%;
+    bottom: 130%;
+    text-decoration: none;
+    position: relative;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    display: flex;
+    width: 600px;
+    height: 135px;
+    text-align: center;
+    background: linear-gradient(315deg, #3f018a, #4f098e, #651fb3, #6c22cd);
+    background-size: 100%;
+    border-radius: 30px;
+    z-index: 1;
+}
+
+#PrimeBtn:hover {
+    animation: ani 8s linear infinite;
+    border: none;
+}
+
+@keyframes ani {
+    0% {
+      background-position: 0%;
+    }
+  
+    100% {
+      background-position: 400%;
+    }
+  }
+
+#PrimeBtn:before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    z-index: -1;
+    background: linear-gradient(315deg, #3f018a, #4f098e, #651fb3, #6c22cd);
+    background-size: 400%;
+    border-radius: 35px;
+    transition: 1s;
+  }
+
+#PrimeBtn:hover::before{
+    filter: blur(20px);
+  }
+
+#PrimeBtn:active {
+    background: linear-gradient(257deg, #3f018a, #4f098e, #651fb3, #6c22cd);
+  }
+  
+
+#PrimeBtn img{
+    position:absolute;
+    width: 165px;
+    height: 198px;
+    padding: 2%;
+    left: 196px;
+    top: -32%;
+    filter: invert(0.88);
+    }
+
+.WorkForUsCTA{
+    position: absolute;
+    width: 100%;
+    height: 1100px;
+    top: 1260px;
+}
+.block{
+    position: absolute;
+    height: 1100px;
+    width: 50%;
+    background: linear-gradient(150deg,#006ECE,#33a0ff);
+    top: 0%;
+
+}
+
+.TxtCTA{
+    position: absolute;
+    top: 5%;
+    width: 40%;
+}
+
+#Catch{
+    font-family: "Kanit",sans-serif;
+    padding: 10% 10% 10% 10%;
+    color:#e7e7e7;
+}
+
+#DescCTA{
+    padding: 10% 10%;
+    font-size: 20px;
+    color: #e7e7e7;
+}
+
+.WorkForUsCTAImg{
+    position: absolute;
+    z-index: -1;
+    top: 0%;
+    left: 50%;
+}
+
+.shadow__btn {
+    padding: 10px 20px;
+    border: none;
+    font-size: 17px;
+    color: #fff;
+    border-radius: 7px;
+    letter-spacing: 4px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.5s;
+    transition-property: box-shadow;
+    position: absolute;
+    top:48%;
+    left:4%;
+    }
+      
+.shadow__btn {
+    background: rgb(255, 221, 0);
+    box-shadow: 0 0 25px rgb(255, 225, 0);
+    }
+      
+.shadow__btn:hover {
+    box-shadow: 0 0 5px rgb(255, 221, 0),
+                0 0 25px rgb(255, 221, 0),
+                0 0 50px rgb(255, 221, 0),
+                0 0 100px rgb(255, 221, 0);
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    
+    body{
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        background-color: #2E2E2E;
+        }
+        
+        .NavContainAMZN{
+            background-color: rgba(40, 40, 40, 0.9);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-height: 80px;
+            z-index: 100;
+            top: 0;
+            left: 0;
+            padding: 20px 0px;
+        }
+        
+        .NavItem{
+            height: auto;
+            list-style: none;
+        }
+        
+        .LogInBtn{
+            height: auto;
+            list-style: none;
+            filter: invert(89%);
+            padding-right: 20px;
+        }
+        
+        .Btn{
+            display: flex;
+            height: 0%;
+        }
+        
+        .navbarlinks{
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            text-decoration: none;
+            padding: 0 1rem;
+            margin: auto; 
+            height: 30px;
+            font-family: 'Kanit', sans-serif;
+        }
+        
+        .navbarlinks:hover{
+            color: #ff9a00;
+            transition: all ease-in-out 0.2s;
+        }
+        
+        #PRIME{
+            color: #fff;
+            font-weight: 600;   
+        }
+        
+        #PRIME:hover {
+            color: #e91efc;
+            transition: all ease-in-out 0.2s;
+        }
+        
+        .AMZNGAMESNAVLIST {
+            display: flex;
+        }
+        
+        .AMZNGAMESNAV {
+            min-height: 73px;
+            max-width: 1600px;
+            min-width: 1315px;
+            margin: 0 0 0 0;
+            padding: 0 0 0 0;
+        }
+        
+        .AMZNLogo {
+            margin-left: 30px;
+            cursor: pointer;
+        }
+        
+        .navbar__menu{
+            display: flex;
+            align-items: center;
+            list-style: none;
+            text-align: center ;
+        }
+        
+        p{
+            font-family: "Kanit", sans-serif;
+        }
+        
+        .img-slider{
+            position: relative;
+            background-color: #2E2E2E;
+            height: 100%;
+            
+        
+        }
+        
+        .img-slider .slide{
+            z-index: 1;
+            position: absolute;
+            width: 103%;
+            clip-path: circle(0% at 0 50%);
+            overflow: hidden;
+        
+        }
+        
+        .img-slider .slide img{
+            z-index: 1;
+            width: 100%;
+            height: 100%;
+            border-radius: 0px;
+            
+        }
+        .img-slider .slide .info{
+            position: absolute;
+            bottom: 0;
+            padding: 15px 30px;
+        }
+        
+        .img-slider .slide .info .GameLogo{
+            width: 17%;
+            height: 17%;
+            padding-top: 1vh;
+        }
+        
+        
+        .img-slider .slide .info p{
+            color: #fff;
+            background: rgba(255,255, 255, 0.1);
+            font-size: 25px;
+            width: 40%;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        
+        .img-slider .navigationimgslider {
+            z-index: 2;
+            position: absolute;
+            display: flex; 
+            width: 128px;
+            height: 32px;
+            transform: translateX(-50%);
+            background-color: #2E2E2E;
+            margin: 0 0;
+            border-radius:7px 7px 0px 0px;
+            top: 711px;
+            left: 87%;
+        }
+        
+        .img-slider .navbtn {
+            background: rgba(255, 255, 255, 0.5);
+            width: 12px;
+            height: 12px;
+            margin: 10px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        
+        .img-slider .slide.active {
+            clip-path: circle(150.0% at 0 50%);
+            transition: 2s all ease-in-out;
+            transition-property: clip-path;
+            /* Ask Thom how to auto crop */
+            
+        }
+        
+        .img-slider .navbtn.active {
+            background: #ff9a00;
+        }
+        
+        .LogInBtn:hover{
+            filter:invert(100%)
+        
+        }
+        .PrimeInfo{
+            position: absolute;
+            top: 834px;
+            height: 250px;
+            width: 128%;
+            background-color: #e7e7e7;
+            padding: 2%;
+            background: linear-gradient(to left, rgba(231,231,231,0) -300%, rgba(231,231,231,1)), url(img/PrimeImgFolder/BannerPrimeImg.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        .BannerImg{
+            z-index: 0;
+        }
+        #TitlePrime{
+            z-index: 1;
+            font-family: "Kanit", sans-serif;
+            color: #a614b3; 
+        }
+        
+        #DescPrime{
+            z-index: 2;
+            font-size: 16px;
+            width: 40%;
+            height: 150px;
+            color: #a614b3;
+        }
+        .PrimeSubBtn{
+        width: 100%;
+        height: 100px;
+        }
+        /*Code for Button and Animation*/
+        #PrimeBtn{
+            left: 50%;
+            bottom: 130%;
+            text-decoration: none;
+            position: relative;
+            border: none;
+            cursor: pointer;
+            color: #fff;
+            display: flex;
+            width: 453px;
+            height: 135px;
+            text-align: center;
+            background: linear-gradient(315deg, #3f018a, #4f098e, #651fb3, #6c22cd);
+            background-size: 100%;
+            border-radius: 30px;
+            z-index: 1;
+        }
+        
+        #PrimeBtn:hover {
+            animation: ani 8s linear infinite;
+            border: none;
+        }
+        
+        @keyframes ani {
+            0% {
+              background-position: 0%;
+            }
+          
+            100% {
+              background-position: 400%;
+            }
+          }
+        
+        #PrimeBtn:before {
+            content: "";
+            position: absolute;
+            top: -5px;
+            left: -5px;
+            right: -5px;
+            bottom: -5px;
+            z-index: -1;
+            background: linear-gradient(315deg, #3f018a, #4f098e, #651fb3, #6c22cd);
+            background-size: 400%;
+            border-radius: 35px;
+            transition: 1s;
+          }
+        
+        #PrimeBtn:hover::before{
+            filter: blur(20px);
+          }
+        
+        #PrimeBtn:active {
+            background: linear-gradient(257deg, #3f018a, #4f098e, #651fb3, #6c22cd);
+          }
+          
+        
+        #PrimeBtn img{
+            position:absolute;
+            width: 165px;
+            height: 198px;
+            padding: 2%;
+            left: 133px;
+            top: -32%;
+            filter: invert(0.88);
+            }
+        
+        .WorkForUsCTA{
+            position: absolute;
+            width: 100%;
+            height: 1100px;
+            top: 806px;
+        }
+        .block{
+            width: 40%;
+            height: 70%;
+            top: 30%;
+            position: absolute;
+            background: linear-gradient(150deg,#006ECE,#33a0ff);
+        }
+        
+        .TxtCTA{
+            position: absolute;
+            top: 34%;
+            width: 40%;
+        }
+        
+        #Catch{
+            font-family: "Kanit",sans-serif;
+            padding: 10% 10% 10% 10%;
+            color:#e7e7e7;
+        }
+        
+        #DescCTA{
+            padding: 10% 10%;
+            font-size: 20px;
+            color: #e7e7e7;
+        }
+        
+        .WorkForUsCTAImg{
+            position: absolute;
+            z-index: -1;
+            top: 30%;
+            left: 40%;
+            height: 70%;
+            overflow: hidden;
+        }
+        
+        .shadow__btn {
+            padding: 10px 20px;
+            border: none;
+            font-size: 17px;
+            color: #fff;
+            border-radius: 7px;
+            letter-spacing: 4px;
+            font-weight: 700;
+            text-transform: uppercase;
+            transition: 0.5s;
+            transition-property: box-shadow;
+            position: absolute;
+            top:87%;
+            left:4%;
+            }
+              
+        .shadow__btn {
+            background: rgb(255, 221, 0);
+            box-shadow: 0 0 25px rgb(255, 225, 0);
+            }
+              
+        .shadow__btn:hover {
+            box-shadow: 0 0 5px rgb(255, 221, 0),
+                        0 0 25px rgb(255, 221, 0),
+                        0 0 50px rgb(255, 221, 0),
+                        0 0 100px rgb(255, 221, 0);
+            }
+
+        }
+
+@media screen and (max-width: 768px){
+    
+    body{
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        background-color: #2E2E2E;
+        }
+        
+        .NavContainAMZN{
+            background-color: rgba(40, 40, 40, 0.9);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-height: 80px;
+            z-index: 100;
+            top: 0;
+            left: 0;
+            padding: 20px 0px;
+        }
+        
+        .NavItem{
+            height: auto;
+            list-style: none;
+        }
+        
+        .LogInBtn{
+            height: auto;
+            list-style: none;
+            filter: invert(89%);
+            padding-right: 20px;
+        }
+        
+        .Btn{
+            display: flex;
+            height: 0%;
+        }
+        
+        .navbarlinks{
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            text-decoration: none;
+            padding: 0 1rem;
+            margin: auto; 
+            height: 30px;
+            font-family: 'Kanit', sans-serif;
+        }
+        
+        .navbarlinks:hover{
+            color: #ff9a00;
+            transition: all ease-in-out 0.2s;
+        }
+        
+        #PRIME{
+            color: #fff;
+            font-weight: 600;   
+        }
+        
+        #PRIME:hover {
+            color: #e91efc;
+            transition: all ease-in-out 0.2s;
+        }
+        
+        .AMZNGAMESNAVLIST {
+            display: flex;
+        }
+        
+        .AMZNGAMESNAV {
+            min-height: 73px;
+            max-width: 1880px;
+            min-width: 1010px;
+            margin: 0 0 0 0;
+            padding: 0 0 0 0;
+        }
+        
+        .AMZNLogo {
+            margin-left: 30px;
+            cursor: pointer;
+        }
+        
+        .navbar__menu{
+            display: flex;
+            align-items: center;
+            list-style: none;
+            text-align: center ;
+        }
+        
+        p{
+            font-family: "Kanit", sans-serif;
+        }
+        
+        .img-slider{
+            position: relative;
+            background-color: #2E2E2E;
+            height: 100%;
+            
+        
+        }
+        
+        .img-slider .slide{
+            z-index: 1;
+            position: absolute;
+            width: 132%;
+            clip-path: circle(0% at 0 50%);
+            overflow: hidden;
+        
+        }
+        
+        .img-slider .slide img{
+            z-index: 1;
+            width: 100%;
+            height: 100%;
+            border-radius: 0px;
+            
+        }
+        .img-slider .slide .info{
+            position: absolute;
+            bottom: 0;
+            padding: 15px 30px;
+        }
+        
+        .img-slider .slide .info .GameLogo{
+            width: 17%;
+            height: 17%;
+            padding-top: 1vh;
+        }
+        
+        
+        .img-slider .slide .info p{
+            color: #fff;
+            background: rgba(255,255, 255, 0.1);
+            font-size: 25px;
+            width: 40%;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        
+        .img-slider .navigationimgslider {
+            z-index: 2;
+            position: absolute;
+            display: flex; 
+            width: 128px;
+            height: 32px;
+            transform: translateX(-50%);
+            background-color: #2E2E2E;
+            margin: 0 0;
+            border-radius:7px 7px 0px 0px;
+            top: 89%;
+            left: 113%;
+        }
+        
+        .img-slider .navbtn {
+            background: rgba(255, 255, 255, 0.5);
+            width: 12px;
+            height: 12px;
+            margin: 10px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        
+        .img-slider .slide.active {
+            clip-path: circle(150.0% at 0 50%);
+            transition: 2s all ease-in-out;
+            transition-property: clip-path;
+            /* Ask Thom how to auto crop */
+            
+        }
+        
+        .img-slider .navbtn.active {
+            background: #ff9a00;
+        }
+        
+        .LogInBtn:hover{
+            filter:invert(100%)
+        
+        }
+        .PrimeInfo{
+            position: absolute;
+            top: 654px;
+            height: 250px;
+            width: 128%;
+            background-color: #e7e7e7;
+            padding: 2%;
+            background: linear-gradient(to left, rgba(231,231,231,0) -300%, rgba(231,231,231,1)), url(img/PrimeImgFolder/BannerPrimeImg.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        .BannerImg{
+            z-index: 0;
+        }
+        #TitlePrime{
+            z-index: 1;
+            font-family: "Kanit", sans-serif;
+            color: #a614b3; 
+        }
+        
+        #DescPrime{
+            z-index: 2;
+            font-size: 16px;
+            width: 40%;
+            height: 150px;
+            color: #a614b3;
+        }
+        .PrimeSubBtn{
+        width: 100%;
+        height: 100px;
+        }
+        /*Code for Button and Animation*/
+        #PrimeBtn{
+            left: 50%;
+            bottom: 130%;
+            text-decoration: none;
+            position: relative;
+            border: none;
+            cursor: pointer;
+            color: #fff;
+            display: flex;
+            width: 453px;
+            height: 135px;
+            text-align: center;
+            background: linear-gradient(315deg, #3f018a, #4f098e, #651fb3, #6c22cd);
+            background-size: 100%;
+            border-radius: 30px;
+            z-index: 1;
+        }
+        
+        #PrimeBtn:hover {
+            animation: ani 8s linear infinite;
+            border: none;
+        }
+        
+        @keyframes ani {
+            0% {
+              background-position: 0%;
+            }
+          
+            100% {
+              background-position: 400%;
+            }
+          }
+        
+        #PrimeBtn:before {
+            content: "";
+            position: absolute;
+            top: -5px;
+            left: -5px;
+            right: -5px;
+            bottom: -5px;
+            z-index: -1;
+            background: linear-gradient(315deg, #3f018a, #4f098e, #651fb3, #6c22cd);
+            background-size: 400%;
+            border-radius: 35px;
+            transition: 1s;
+          }
+        
+        #PrimeBtn:hover::before{
+            filter: blur(20px);
+          }
+        
+        #PrimeBtn:active {
+            background: linear-gradient(257deg, #3f018a, #4f098e, #651fb3, #6c22cd);
+          }
+          
+        
+        #PrimeBtn img{
+            position:absolute;
+            width: 165px;
+            height: 198px;
+            padding: 2%;
+            left: 133px;
+            top: -32%;
+            filter: invert(0.88);
+            }
+        
+        .WorkForUsCTA{
+            position: absolute;
+            width: 100%;
+            height: 1100px;
+            top: 605px;
+        }
+        .block{
+            width: 40%;
+            height: 70%;
+            top: 30%;
+            position: absolute;
+            background: linear-gradient(150deg,#006ECE,#33a0ff);
+        }
+        
+        .TxtCTA{
+            position: absolute;
+            top: 34%;
+            width: 40%;
+        }
+        
+        #Catch{
+            font-family: "Kanit",sans-serif;
+            padding: 10% 10% 10% 10%;
+            color:#e7e7e7;
+        }
+        
+        #DescCTA{
+            padding: 10% 10%;
+            font-size: 20px;
+            color: #e7e7e7;
+        }
+        
+        .WorkForUsCTAImg{
+            position: absolute;
+            z-index: -1;
+            top: 30%;
+            left: 40%;
+            height: 70%;
+            overflow: hidden;
+        }
+        
+        .shadow__btn {
+            padding: 10px 20px;
+            border: none;
+            font-size: 17px;
+            color: #fff;
+            border-radius: 7px;
+            letter-spacing: 4px;
+            font-weight: 700;
+            text-transform: uppercase;
+            transition: 0.5s;
+            transition-property: box-shadow;
+            position: absolute;
+            top:87%;
+            left:4%;
+            }
+              
+        .shadow__btn {
+            background: rgb(255, 221, 0);
+            box-shadow: 0 0 25px rgb(255, 225, 0);
+            }
+              
+        .shadow__btn:hover {
+            box-shadow: 0 0 5px rgb(255, 221, 0),
+                        0 0 25px rgb(255, 221, 0),
+                        0 0 50px rgb(255, 221, 0),
+                        0 0 100px rgb(255, 221, 0);
+            }
+
+        }
